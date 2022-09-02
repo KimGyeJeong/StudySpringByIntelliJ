@@ -22,4 +22,9 @@ public class TestController {
     public void hello(){
         log.info("------------------------------------------------------------------------");
     }
+    @GetMapping("test")
+    public String test(){
+        log.info("Test and go index");
+        return "index";
+    }
 }
